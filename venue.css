@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff5733;
+}
+
+.venue-details {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-small-fresh-and-simple-gourmet-fresh-pork-poster-banner-picture-image_1091224.jpg);
+    background-size: cover;
+}
+
+.venue-details .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.venue-details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.venue-details p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-517-food-festival-sashimi-simple-texture-hand-painted-fish-background-picture-image_1039527.jpg);
+}
+
+.image-gallery .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-placeholder {
+    background-color: #ccc;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.address-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    background-image: url(https://c8.alamy.com/comp/2C1A20G/banner-raw-uncooked-ingredients-for-cooking-pasta-cooking-background-food-banner-2C1A20G.jpg);
+}
+
+.address-section .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.address-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.address-section address {
+    font-style: normal;
+    line-height: 1.6;
+    color: #555;
+}
+
+.address-section p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer .social-media {
+    margin: 10px 0;
+}
+
+.footer .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .social-media a:hover {
+    color: #ff5733;
+}
+
+.imagess {
+    width: 90%;
+}
+
+/* Media Queries */
+
+/* For Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .venue-details h2,
+    .image-gallery h2,
+    .address-section h2 {
+        font-size: 1.8em;
+    }
+
+    .venue-details p,
+    .address-section p {
+        font-size: 1em;
+    }
+
+    .image-placeholder {
+        width: 180px;
+        height: 130px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0;
+    }
+
+    .venue-details h2,
+    .image-gallery h2,
+    .address-section h2 {
+        font-size: 1.5em;
+    }
+
+    .venue-details p,
+    .address-section p {
+        font-size: 0.9em;
+    }
+
+    .image-placeholder {
+        width: 150px;
+        height: 110px;
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 1.2em;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0;
+    }
+
+    .venue-details h2,
+    .image-gallery h2,
+    .address-section h2 {
+        font-size: 1.2em;
+    }
+
+    .venue-details p,
+    .address-section p {
+        font-size: 0.8em;
+    }
+
+    .image-placeholder {
+        width: 120px;
+        height: 90px;
+    }
+}
